@@ -1,0 +1,46 @@
+{
+  "name": "Match",
+  "type": "object",
+  "properties": {
+    "account1": {
+      "type": "string"
+    },
+    "account2": {
+      "type": "string"
+    },
+    "profile1Id": {
+      "type": "string"
+    },
+    "profile2Id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "account1",
+    "account2",
+    "profile1Id",
+    "profile2Id"
+  ],
+  "rls": {
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}
